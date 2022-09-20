@@ -175,25 +175,3 @@ console.log(nuevoEquipo2); // Racing, River, Boca, Independiente, Defensa y Just
 let numeros2 = [1, 2, 3];
 let meses = ['enero', 'febrero', 'marzo'];
 console.log([...numeros2, ...meses]); // 1,2,3,enero,febrero,marzo
-
-// Desafío 2
-
-const usuarios = [
-    { nombre: 'Carlos', apellido: 'Sánchez' },
-    { nombre: 'Guadalupe', apellido: 'Trúccolo' },
-    { nombre: 'Fernando', apellido: 'Alonso' },
-];
-
-let usuariosTotales = [...usuarios, { nombre: 'Sergio', apellido: 'Pérez' }]
-
-console.log(usuariosTotales);
-
-const nombres2 = function (usuario) {
-    return usuario.nombre;
-}
-const susNombres = usuariosTotales.map(nombres2);
-
-console.log(susNombres)
-
-const copiaDeUsuarios = { ...usuariosTotales };
-console.log(copiaDeUsuarios);
